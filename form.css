@@ -115,7 +115,7 @@ h4 {
     border-color: transparent;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0 3rem 0;
 }
 
 /* 
@@ -166,9 +166,9 @@ Layout Styling
     padding: 1rem;
     border-radius: 5px;
 }
-@media (min-width: 800px){
+@media (max-width: 600px){
     .component{
-        width: 95%;;
+        width: 100%;;
     }
 }
 
@@ -215,6 +215,12 @@ Layout Styling
     display: inline-block;
     width: 60px;
     height: 34px;
+}
+
+@media (max-width: 600px) {
+    .switch-container{
+        flex-direction: column;
+    }
 }
 
 /* Hide the square box */
@@ -290,4 +296,10 @@ datalist{
 .button-list {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width:600px) {
+    .button-list{
+        display: block;
+    }
 }
